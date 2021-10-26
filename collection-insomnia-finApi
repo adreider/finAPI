@@ -1,1 +1,369 @@
-{"_type":"export","__export_format":4,"__export_date":"2021-10-26T14:07:43.586Z","__export_source":"insomnia.desktop.app:v2021.5.3","resources":[{"_id":"req_b4377f599f2946d0a3e80741e5ebb59f","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635256759614,"created":1635256733643,"url":"{{ _.baseUrl }}/balance","name":"Get Balance","description":"","method":"GET","body":{},"parameters":[],"headers":[{"id":"pair_7f8942e4d0954ce2a3562c505b208fef","name":"cpf","value":"55555555555","description":""}],"authentication":{},"metaSortKey":-1635256733689,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_d218f2d114a046d58c817ec78b538601","parentId":null,"modified":1635249795452,"created":1635249795452,"name":"FinAPI","description":"","scope":"collection","_type":"workspace"},{"_id":"req_43aeaea4373347df8dde3635a4bebaab","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635256549786,"created":1635256434927,"url":"{{ _.baseUrl }}/account","name":"Delete Account","description":"","method":"DELETE","body":{"mimeType":"application/json","text":""},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_06943da171a24c19962fcefd72ed677b"},{"id":"pair_81b04d234ba64074b4ddebf22f54ab55","name":"cpf","value":"55555555555","description":""}],"authentication":{},"metaSortKey":-1635256434927,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_54ec3dfccead477a98ebc56601a5a942","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635256496627,"created":1635255958460,"url":"{{ _.baseUrl }}/account","name":"Get Account","description":"","method":"GET","body":{},"parameters":[],"headers":[{"id":"pair_504257a91f3049b7998f4495f52e7604","name":"cpf","value":"55555555555","description":""}],"authentication":{},"metaSortKey":-1635255958506,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_accc510e533444468172937379d71cbb","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635255782874,"created":1635255742722,"url":"{{ _.baseUrl }}/account","name":"Update Account","description":"","method":"PUT","body":{"mimeType":"application/json","text":"{\n\t\"name\": \"tefy\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_50763fc5ab364e4282373569fcf3d582"},{"id":"pair_4337840ba7e6484fa23829b46f758407","name":"cpf","value":"33333333333","description":""}],"authentication":{},"metaSortKey":-1635255742722,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_169f6ddff60f466086fc9f2ba80753d9","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635254631097,"created":1635254054897,"url":"{{ _.baseUrl }}/statement/date","name":"StatementByDate","description":"","method":"GET","body":{},"parameters":[{"id":"pair_3d673fdc1eee41caab0fa396e16b9c8e","name":"date","value":"2021-10-26","description":""}],"headers":[{"id":"pair_070476518cc4489a915ddae02c03be61","name":"cpf","value":"33333333333","description":""}],"authentication":{},"metaSortKey":-1635254054953,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_7ad2a054555245c3a68d7fdd9f79349e","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635256882385,"created":1635253364529,"url":"{{ _.baseUrl }}/withdraw","name":"WithDraw","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"amount\": 15\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_1a6390a2563b41ac8a36192fcf4fc46b"},{"id":"pair_9c9ee82efe994c46b42836c93bc12378","name":"cpf","value":"55555555555","description":""}],"authentication":{},"metaSortKey":-1635253364529,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_4f0529a2052d4a38a5a5a1bd6f9fbbb5","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635256871521,"created":1635251837387,"url":"{{ _.baseUrl }}/deposit","name":"Deposit","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"description\": \"pagamento\",\n\t\"amount\": 4000\n}"},"parameters":[],"headers":[{"id":"pair_b8f5c917c60248afb2c59898a44409de","name":"cpf","value":"55555555555","description":""},{"name":"Content-Type","value":"application/json","id":"pair_ab7e1a5d83eb4311af4b8fa9477153b7"}],"authentication":{},"metaSortKey":-1635251837387,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_698d5293efd04de7b6e620aa46c0fe8d","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635256856590,"created":1635250644734,"url":"{{ _.baseUrl }}/statement","name":"Statement","description":"","method":"GET","body":{},"parameters":[],"headers":[{"id":"pair_477073d5254148599a1c682fb02a1046","name":"cpf","value":"55555555555","description":""}],"authentication":{"type":"bearer"},"metaSortKey":-1635250644785,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_e2cb72907e3741c78552bf5085df8118","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635256462770,"created":1635249808916,"url":"{{ _.baseUrl }}/account","name":"Create","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"cpf\": \"55555555555\",\n\t\"name\": \"adriano Lino\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_b68c71a936fa48a8a9a15bbff4f631a3"}],"authentication":{},"metaSortKey":-1635249808916,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_eb75970ae885f94f0556443ef518d2217fb64bb4","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635249872081,"created":1635249795465,"name":"Base Environment","data":{"baseUrl":"http://localhost:3333"},"dataPropertyOrder":{"&":["baseUrl"]},"color":null,"isPrivate":false,"metaSortKey":1635249795465,"_type":"environment"},{"_id":"jar_eb75970ae885f94f0556443ef518d2217fb64bb4","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635249795467,"created":1635249795467,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_fd17a5e540f744dca2af3b1db518ae6e","parentId":"wrk_d218f2d114a046d58c817ec78b538601","modified":1635249795457,"created":1635249795457,"fileName":"FinAPI","contents":"","contentType":"yaml","_type":"api_spec"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-10-26T14:07:43.586Z",
+  "__export_source": "insomnia.desktop.app:v2021.5.3",
+  "resources": [
+    {
+      "_id": "req_b4377f599f2946d0a3e80741e5ebb59f",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635256759614,
+      "created": 1635256733643,
+      "url": "{{ _.baseUrl }}/balance",
+      "name": "Get Balance",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_7f8942e4d0954ce2a3562c505b208fef",
+          "name": "cpf",
+          "value": "55555555555",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1635256733689,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_d218f2d114a046d58c817ec78b538601",
+      "parentId": null,
+      "modified": 1635249795452,
+      "created": 1635249795452,
+      "name": "FinAPI",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_43aeaea4373347df8dde3635a4bebaab",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635256549786,
+      "created": 1635256434927,
+      "url": "{{ _.baseUrl }}/account",
+      "name": "Delete Account",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_06943da171a24c19962fcefd72ed677b"
+        },
+        {
+          "id": "pair_81b04d234ba64074b4ddebf22f54ab55",
+          "name": "cpf",
+          "value": "55555555555",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1635256434927,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_54ec3dfccead477a98ebc56601a5a942",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635256496627,
+      "created": 1635255958460,
+      "url": "{{ _.baseUrl }}/account",
+      "name": "Get Account",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_504257a91f3049b7998f4495f52e7604",
+          "name": "cpf",
+          "value": "55555555555",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1635255958506,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_accc510e533444468172937379d71cbb",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635255782874,
+      "created": 1635255742722,
+      "url": "{{ _.baseUrl }}/account",
+      "name": "Update Account",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"tefy\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_50763fc5ab364e4282373569fcf3d582"
+        },
+        {
+          "id": "pair_4337840ba7e6484fa23829b46f758407",
+          "name": "cpf",
+          "value": "33333333333",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1635255742722,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_169f6ddff60f466086fc9f2ba80753d9",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635254631097,
+      "created": 1635254054897,
+      "url": "{{ _.baseUrl }}/statement/date",
+      "name": "StatementByDate",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_3d673fdc1eee41caab0fa396e16b9c8e",
+          "name": "date",
+          "value": "2021-10-26",
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "id": "pair_070476518cc4489a915ddae02c03be61",
+          "name": "cpf",
+          "value": "33333333333",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1635254054953,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7ad2a054555245c3a68d7fdd9f79349e",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635256882385,
+      "created": 1635253364529,
+      "url": "{{ _.baseUrl }}/withdraw",
+      "name": "WithDraw",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"amount\": 15\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_1a6390a2563b41ac8a36192fcf4fc46b"
+        },
+        {
+          "id": "pair_9c9ee82efe994c46b42836c93bc12378",
+          "name": "cpf",
+          "value": "55555555555",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1635253364529,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4f0529a2052d4a38a5a5a1bd6f9fbbb5",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635256871521,
+      "created": 1635251837387,
+      "url": "{{ _.baseUrl }}/deposit",
+      "name": "Deposit",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"description\": \"pagamento\",\n\t\"amount\": 4000\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_b8f5c917c60248afb2c59898a44409de",
+          "name": "cpf",
+          "value": "55555555555",
+          "description": ""
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ab7e1a5d83eb4311af4b8fa9477153b7"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1635251837387,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_698d5293efd04de7b6e620aa46c0fe8d",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635256856590,
+      "created": 1635250644734,
+      "url": "{{ _.baseUrl }}/statement",
+      "name": "Statement",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_477073d5254148599a1c682fb02a1046",
+          "name": "cpf",
+          "value": "55555555555",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "bearer"
+      },
+      "metaSortKey": -1635250644785,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e2cb72907e3741c78552bf5085df8118",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635256462770,
+      "created": 1635249808916,
+      "url": "{{ _.baseUrl }}/account",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"cpf\": \"55555555555\",\n\t\"name\": \"adriano Lino\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_b68c71a936fa48a8a9a15bbff4f631a3"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1635249808916,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_eb75970ae885f94f0556443ef518d2217fb64bb4",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635249872081,
+      "created": 1635249795465,
+      "name": "Base Environment",
+      "data": {
+        "baseUrl": "http://localhost:3333"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "baseUrl"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1635249795465,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_eb75970ae885f94f0556443ef518d2217fb64bb4",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635249795467,
+      "created": 1635249795467,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_fd17a5e540f744dca2af3b1db518ae6e",
+      "parentId": "wrk_d218f2d114a046d58c817ec78b538601",
+      "modified": 1635249795457,
+      "created": 1635249795457,
+      "fileName": "FinAPI",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
